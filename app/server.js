@@ -11,7 +11,7 @@ const routes = require('./routes/itemRoutes.js');
 mongoose.Promise = global.Promise;
 mongoose.set('useFindAndModify', false);
 mongoose.connect(
-  `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@scienzia.ytu1l.mongodb.net/thingstocook`
+  `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@${process.env.DB_HOST}`
   ,
   { useNewUrlParser: true,
     useUnifiedTopology: true}
