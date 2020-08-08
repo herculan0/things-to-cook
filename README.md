@@ -1,31 +1,31 @@
-#Rocketmat - Challenge
+Rocketmat - Challenge
 
 Things to Cook:  
 An simple app to track the items that you have on your kitchen.
 
-####Frontend: 
+Frontend: 
 	- VueJS
 
-#####Backend: 
+Backend: 
 	- NodeJS 
 	- MongoDB
 
-#####IaS:
+IaS:
 	- Terraform
 	- Makefile
 	
-#####Infraestructure:
+Infraestructure:
 	- Docker
 	- AWS EKS(Kubernetes)
 	- AWS S3
 	
-#####CI/CD:
+CI/CD:
 
 
-###How to
+How to
 
-######Development Environment
+Development Environment
 
-######Test Enviroment
+Test Enviroment
 
-######Prod Environment
+Prod Environment

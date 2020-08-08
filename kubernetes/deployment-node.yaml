@@ -1,0 +1,20 @@
+# Deploy the pods
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: thingstocook
+spec:
+  selector:
+    matchLabels:
+      app: thingstocook
+  replicas: 1 # tells deployment to run 2 pods matching the template
+  template: # create pods using pod definition in this template
+    metadata:
+      labels:
+        app: thingstocook
+    spec:
+      containers:
+      - name: thingstocook
+        image: 373782272813.dkr.ecr.us-east-1.amazonaws.com/dev/thingstocook:latest
+        ports:
+        - containerPort: 8080

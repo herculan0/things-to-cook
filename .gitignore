@@ -1,0 +1,11 @@
+*node_modules
+*.env
+*.venv
+*.tfstate
+*.terraform
+*kubeconfig
+*dist
+kubeconfig_training-eks-dNicJL2C
+*.tfstate.backup
+*.vscode
+
