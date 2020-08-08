@@ -1,11 +1,21 @@
 version: 2.1
+workflows:
+  test-env-vars:
+    jobs:
+      - build:
+          context: env
 jobs:
   build:
     working_directory: ~/app
     docker:
       - image: circleci/node:10.16.3
+    environment:
+      DB_HOST: ${DB_HOST}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
     steps:
       - checkout
+      - run:
       - run:
           name: update-npm
           command: 'sudo npm install -g npm@5'
